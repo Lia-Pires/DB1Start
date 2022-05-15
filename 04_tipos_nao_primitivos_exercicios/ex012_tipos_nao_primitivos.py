@@ -1,0 +1,1 @@
+'''Escreva um programa que verifique se uma lista está vazia ou não.'''
