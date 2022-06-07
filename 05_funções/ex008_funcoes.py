@@ -13,3 +13,4 @@ excluindo o próprio número. Equivalente a isto, um número perfeito é
 a metade da soma de todos os seus divisores positivos, incluindo o
 próprio número
 '''
+

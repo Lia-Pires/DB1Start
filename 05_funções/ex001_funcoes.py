@@ -4,11 +4,11 @@ parâmetro.
 '''
 
 
-def maior_numero(lista):
-    print(f"O maior número da lista é: {max(lista)}")
+def higher_number(list):
+    print(f"The higher number of the given list is: {max(list)}")
 
 
-maior_numero([1, 7, 10, 11, 45])
-maior_numero([8, 5000, 15, 150, 1020])
-maior_numero([0, -2, 3010,-250, 360])
-maior_numero([7, 1, 2, 3, 4, 5, 6])
+higher_number([1, 7, 10, 11, 45])
+higher_number([8, 5000, 15, 150, 1020])
+higher_number([0, -2, 3010,-250, 360])
+higher_number([7, 1, 2, 3, 4, 5, 6])
