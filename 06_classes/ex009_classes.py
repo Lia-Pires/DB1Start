@@ -9,3 +9,4 @@ Uso:
 ponto = Ponto3D(1, 2, 3)
 Print(ponto) => (1, 2, 3)
 '''
+

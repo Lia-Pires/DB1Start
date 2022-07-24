@@ -6,3 +6,4 @@ string como parâmetro e armazená-la em um array. O
 segundo, deverá listar as strings invertidas no seu
 conteúdo e também, na sua ordem de inclusão.
 '''
+
