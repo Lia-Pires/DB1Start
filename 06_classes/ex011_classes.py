@@ -24,3 +24,37 @@ Histórico de transferências: <LISTAGEM DAS BASES PELAS QUAIS A
 AERONAVE PASSOU MOSTRANDO A DATA / HORA E BASE>
 
 '''
+
+
+class JatoMilitar2Lugares:
+
+    from datetime import datetime
+
+    historico_de_bases = dict()
+
+    def __init__(self, modelo: str, base_inicial: str) -> None:
+        self.modelo = modelo
+        self.base_inicial = base_inicial
+        JatoMilitar2Lugares.historico_de_bases[self.base_inicial] = JatoMilitar2Lugares.datetime.now().strftime("%d/%m/%y %H:%M")
+
+    def designar_piloto(self, nome_do_piloto: str, nome_do_copiloto) -> None:
+        self.nome_do_piloto = nome_do_piloto
+        self.nome_do_copiloto = nome_do_copiloto
+
+    def rebasear_aeronave(self, nova_base: str) -> None:
+        if isinstance(self.nome_do_piloto, str) and isinstance(self.nome_do_copiloto, str):
+            self.nova_base = nova_base
+            JatoMilitar2Lugares.historico_de_bases[self.nova_base] = JatoMilitar2Lugares.datetime.now().strftime("%d/%m/%y %H:%M")
+            print(f"Jato: {self.modelo}")
+            print(f"Base Inicial: {self.base_inicial}")
+            print(f"Piloto: {self.nome_do_piloto}")
+            print(f"Copiloto: {self.nome_do_copiloto}")
+            print(f"Histórico de transferências: {JatoMilitar2Lugares.historico_de_bases}")
+
+        else:
+            print("Um piloto precisa ser designado!")
+
+
+jato_lia = JatoMilitar2Lugares("LiaDessault", "Area51")
+jato_lia.designar_piloto("Lia", "Pires")
+jato_lia.rebasear_aeronave("Area52")

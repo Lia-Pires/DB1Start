@@ -33,7 +33,7 @@ class JatoMilitar1Lugar:
         JatoMilitar1Lugar.historico_de_bases[self.base_inicial] = JatoMilitar1Lugar.datetime.now(
         ).strftime("%d/%m/%y %H:%M")
 
-    def designar_piloto(self, nome_do_piloto: str) -> bool:
+    def designar_piloto(self, nome_do_piloto: str) -> None:
         self.nome_do_piloto = nome_do_piloto
 
     def rebasear_aeronave(self, nova_base: str) -> None:
