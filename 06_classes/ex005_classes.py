@@ -25,10 +25,10 @@ class Aluno:
         else: 
             return self.id
 
-# lia = Aluno(78900, "Lia", "Primeiro_ano")
+lia = Aluno(78900, "Lia", "Primeiro_ano")
 # lia = Aluno(78900, "Lia")
 # lia = Aluno(78900, "Primeiro_ano")
-lia = Aluno(78900)
+# lia = Aluno(78900)
 
 print(lia.dados_do_aluno())
 
