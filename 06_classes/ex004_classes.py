@@ -7,3 +7,4 @@ segundo, deverá listar as strings invertidas no seu
 conteúdo e também, na sua ordem de inclusão.
 '''
 
+
